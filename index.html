@@ -2,8 +2,26 @@
 <html lang="en">
   <head>
     <style>
-      body{
-        background-image: image('./assets/bg.jpg');
+      body {
+        background-repeat: no-repeat;
+        background-color: #000000;
+        background-size: auto;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
       }
     </style>
     <meta charset="UTF-8" />
@@ -14,6 +32,43 @@
     <title>Sayan Nath</title>
   </head>
   <body>
-      
+    <!-- <div>
+      <img src="assets/bg.jpg" alt="bg" />
+    </div> -->
+    <div class="row">
+      <div class="column">
+        <img src="assets/bg.jpg" alt="Snow" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="assets/coding.webp" alt="Forest" style="width: 100%" />
+      </div>
+    </div>
+    <div>
+      <h1 style="color: #ffffff">Hello!</h1>
+      <h2 style="color: #ffffff">I am Sayan Nath</h2>
+      <h3 style="color: #ffffff">sayanath235@gmail.com</h3>
+    </div>
+    <button type="button" onclick="alert('Hello! For clicking me')">Click Me!</button>
+    <div><h4>shshs</h4></div>
+    <div>
+      <h3 style="color: #ffffff">Hobbies</h3>
+      <p style="color: #ffffff">1. Exploring New Things</p>
+      <p style="color: #ffffff">2. Coding</p>
+    </div>
+    <div>
+      <h3 style="color: #ffffff">Internships</h3>
+      <p style="color: #ffffff">1. Vulmiqi</p>
+      <p style="color: #ffffff">2. Kyrion Technologies</p>
+    </div>
+    <div>
+      <h3 style="color: #ffffff">Organisations</h3>
+      <p style="color: #ffffff">1. Codebugged AI</p>
+      <p style="color: #ffffff">2. DSCKIIT</p>
+    </div>
+    <div>
+      <h3 style="color: #ffffff">Projects</h3>
+      <p style="color: #ffffff">1. Spyd-Mobile Signal Detector</p>
+      <p style="color: #ffffff">2. Malaria Detection using CNN</p>
+    </div>
   </body>
 </html>
